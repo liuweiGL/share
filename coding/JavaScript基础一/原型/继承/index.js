@@ -1,10 +1,16 @@
-// 构造函数首字母大写
 function Persion() {}
+Persion.prototype.say = function() {
+  console.log('this is: ', this.name)
+}
 
-var xiaoming = new Persion()
+function Man(name) {
+  this.name = name
+}
 
-console.log('%cPersion构造函数：', 'color: red;')
-console.dir(Persion)
+// 让 `Man.prototype` 继承 `Persion.prototype`
+Man.prototype = new Persion()
+// 防止`constructor` 属性丢失
+Man.prototype.constructor = Man
 
-console.log('%cxiaoming实例：', 'color: red;')
-console.dir(xiaoming)
+var xiaoming = new Man('xiaoming')
+xiaoming.say()
