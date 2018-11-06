@@ -14,3 +14,7 @@
   > 知识点：`this`、`原型链`、`闭包`  
   > 代码示例：[JavaScript基础一](coding/JavaScript基础一)
   
+* [JavaScript基础知识二](ppt/JavaScript基础二.pptx)
+  
+  > 知识点：`并发模型与事件循环`、`定时器`、`$nextTick`  
+  > 代码示例：略
